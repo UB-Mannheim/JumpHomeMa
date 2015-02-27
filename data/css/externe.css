@@ -41,7 +41,7 @@ html, body, form
 }
 
 
-.UBMaSchliess {
+body .UBMaSchliess {
     bottom: 10px;
     float: left;
     height: 5%;
@@ -49,4 +49,12 @@ html, body, form
     width: 110px;
     padding-bottom: 3px;
     z-index: 100000;
+    font-size: 16px;
+    line-height: 18px;
 }
+
+.UBMaSchliess, 
+.UBMaSchliess #info-terminal-home-button {
+    box-sizing: unset !important;
+}
+
