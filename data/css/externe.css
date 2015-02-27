@@ -1,0 +1,52 @@
+/**
+ * externeurls.css
+ *
+ * @creator     Bernd Fallert, UB Mannheim
+ * @file        externe.css
+ * Stand:       2015-01-16, 07:55:00
+ * Version für Add-On
+ *
+ */
+
+html, body, form
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Version links */
+.schliessbutton_neu_links {
+    background-color: #990000;
+    border: 1px solid #2E2E2E;
+    border-radius: 5px;
+    box-shadow: 6px 5px 6px #000000;
+    color: #ffffff;
+    float: left;
+    font-family: Arial,verdana;
+    height: 96.8%;
+    margin: 10px 21px 20px 3px;
+    padding-right: 3px;
+    text-align: center;
+    width: 73px;
+
+    margin-left: 8px;
+    margin-right: 21px;
+    position: fixed;
+    bottom: 10px;
+    height: 5%;
+    opacity: 0.69;
+    background-image: url('home/home_weiss.gif');
+    z-index: 100001;
+}
+
+
+.UBMaSchliess {
+    bottom: 10px;
+    float: left;
+    height: 5%;
+    position: fixed;
+    width: 110px;
+    padding-bottom: 3px;
+    z-index: 100000;
+}

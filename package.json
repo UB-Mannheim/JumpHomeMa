@@ -1,0 +1,16 @@
+{
+  "name": "jumphomema",
+  "title": "JumpHomeMa",
+  "id": "jumphomema",
+  "description": "Fügt einen Home-Butten auf jeder Seite ein (ausser innerhalb von iFrames). Button wird links unten halbtransparent eingefügt",
+  "author": "Bernd Fallert, UB Mannheim",
+  "license": "MPL 2.0",
+  "version": "0.5",
+  "preferences": [{
+        "name": "InfoTerminalStartseiteAufrufenWebadresse",
+        "title": "URL",
+        "description": "Auf welche URL soll der Homebutton zeigen",
+        "type": "string",
+        "value": "http://www.bib.uni-mannheim.de/1041.html "
+    }]
+}
