@@ -8,16 +8,16 @@
 
 ## Konfiguration
 
-- In Extras / Addon / InfoTerminal Startseite aufrufen / Einstellungen gibt es ein Eingabefeld "URL". In diesem Feld kann die URL hinterlegt werden auf die der Home-Button verlinkt werden soll.
+- In Extras / Addon / JumpHomeMa / Einstellungen gibt es ein Eingabefeld "URL". In diesem Feld kann die URL hinterlegt werden auf die der Home-Button verlinkt werden soll.
 - ggf. muss nach dem ändern der URL der Browser neu gestartet werden damit die neue Adresse akzeptiert wird
 
 ## Licence  ![en](http://bib.uni-mannheim.de/fileadmin/scripts/flag_en.jpeg)
 
-This is free software. You may use it under the terms of the GNU General Public License (GPL). See <a href="https://github.com/UB-Mannheim/mahome/blob/master/LICENSE">LICENCE</a> for details.
+This is free software. You may use it under the terms of the GNU General Public License (GPL). See <a href="https://github.com/BFallert/JumpHomeMa/blob/master/LICENSE">LICENCE</a> for details.
 
 ## LIZENZ  ![de](http://bib.uni-mannheim.de/fileadmin/scripts/flag_de.jpeg)
 
-Dies ist freie Software. Sie können sie unter den Bedingungen der GNU General Public License (GPL) verwenden. Siehe <a href="https://github.com/UB-Mannheim/mahome/blob/master/LICENSE">LICENCE</a> für Details.
+Dies ist freie Software. Sie können sie unter den Bedingungen der GNU General Public License (GPL) verwenden. Siehe <a href="https://github.com/BFallert/JumpHomeMa/blob/master/LICENSE">LICENCE</a> für Details.
 
 ## History:
 
