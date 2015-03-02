@@ -25,7 +25,7 @@ self.port.on("InfoTerminalStartseite", function(AktInfoTerminalStartseiteAufrufe
     console.log( "\n\n\n\n" + "lZeigeButton: ______________________" + "\n\n\n\n");
     if (lZeigeButton) {
         var div = document.createElement("div");
-        div.innerHTML = "<a id='info-terminal-home-button' href='" + AktInfoTerminalStartseiteAufrufenWebadresse + "' " +
+        div.innerHTML = "<a id='info-terminal-home-button' data-ajax='false' href='" + AktInfoTerminalStartseiteAufrufenWebadresse + "' " +
                         "class='schliessbutton_neu_links' title='Home'>" +
                         "</a>";
         div.style.color = "white";

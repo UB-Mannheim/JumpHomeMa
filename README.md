@@ -21,6 +21,7 @@ Dies ist freie Software. Sie können sie unter den Bedingungen der GNU General P
 
 ## History:
 
+- 0.6 02.03.2015, 15:29:52  Anpassung wg UB Heidelberg, Mobile Seiten, Problem mit Ajay gefixed, Dank an Daniela Wolf
 - 0.5 26.02.2015, 11:07:27  jetzt mit Konfigurationsmöglichkeit. Welche URL soll angezeigt werden, ggf. neu starten nach ändern der URL
 - 0.4 21.01.2015, 12:00:00  interne Version
 - 0.3 20.01.2015, 12:30:00  nur noch wenn nicht innerhalb eines iframes aufgerufen, sonst z.B. Problem mit Ampelseite
