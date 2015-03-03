@@ -1,5 +1,5 @@
 # ToDo
 
-- Korrigieren: bei lokalen Dateien die nur über file:// aufgerufen werden, wird der Home-Button nicht angezeigt
+- Korrigieren: bei lokalen Dateien die nur Ã¼ber file:// aufgerufen werden, wird der Home-Button nicht angezeigt
   Ursache: ?
 
