@@ -11,6 +11,12 @@
 - In Extras / Addon / JumpHomeMa / Einstellungen gibt es ein Eingabefeld "URL". In diesem Feld kann die URL hinterlegt werden auf die der Home-Button verlinkt werden soll.
 - ggf. muss nach dem ändern der URL der Browser neu gestartet werden damit die neue Adresse akzeptiert wird
 
+## Notwendige Einstellung in Firefox
+
+- aktuell funktioniert JumpHomeMa nicht wenn bei Chronik "niemals anlegen" ausgewählt wurde.
+  Alternativ kann "nach benutzerdefinierten Einstellungen anlegen" ausgewählt werden und einen Haken bei
+  "Die Chronik löschen, wenn Firefox geschlossen wird".
+
 ## Licence  ![en](http://bib.uni-mannheim.de/fileadmin/scripts/flag_en.jpeg)
 
 This is free software. You may use it under the terms of the GNU General Public License (GPL). See <a href="https://github.com/BFallert/JumpHomeMa/blob/master/LICENSE">LICENCE</a> for details.
