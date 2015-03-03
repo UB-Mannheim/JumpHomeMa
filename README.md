@@ -4,7 +4,8 @@
 
 - Das AddOn blendet links unten (mit einem kleinen Abstand zum unteren Rand) einen halbtransparenten Home-Button ein.
 - Die URL auf die der Home-Button verweist kann mit den normalen Konfigurationsseite des AddOns eingestellt werden.
-- Der Home-Button wird nicht eingeblendet wenn die HTML-Datei innerhalb eines iFrames dargestellt wird
+- Der Home-Button wird nicht eingeblendet wenn die HTML-Datei innerhalb eines iFrames dargestellt wird.
+- bei lokalen Dateien die nur über file:// aufgerufen werden, wird der Home-Button nicht angezeigt
 
 ## Konfiguration
 
@@ -15,7 +16,7 @@
 
 - aktuell funktioniert JumpHomeMa nicht wenn bei Chronik "niemals anlegen" ausgewählt wurde.
   Alternativ kann "nach benutzerdefinierten Einstellungen anlegen" ausgewählt werden und einen Haken bei
-  "Die Chronik löschen, wenn Firefox geschlossen wird".
+  "Die Chronik löschen, wenn Firefox geschlossen wird" setzen.
 
 ## Licence  ![en](http://bib.uni-mannheim.de/fileadmin/scripts/flag_en.jpeg)
 
