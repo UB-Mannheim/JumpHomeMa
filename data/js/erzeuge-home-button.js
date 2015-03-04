@@ -8,8 +8,8 @@ self.port.on("InfoTerminalStartseite", function(AktInfoTerminalStartseiteAufrufe
     console.log( "---------------------------START self.port.on InfoTerminalStartseite -----------------------" );
     console.log(AktInfoTerminalStartseiteAufrufenWebadresse);
 
-    var d                       = document;
-    var host                    = d.location.host;
+    //var d                       = document;
+    //var host                    = d.location.host;
     //------------------------------------------------------------------------------
     // Fuer Pruefung auf RufeExterneURL.php und UB3D
     //------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ self.port.on("InfoTerminalStartseite", function(AktInfoTerminalStartseiteAufrufe
 
     var lZeigeButton            = true;
 
-    var lFehlersuche            = false;
+    //var lFehlersuche            = false;
     //var lFehlersuche            = true;
 
 
@@ -39,7 +39,7 @@ self.port.on("InfoTerminalStartseite", function(AktInfoTerminalStartseiteAufrufe
 
         if (!isInIframe) {
             document.body.insertBefore(div, document.body.firstChild);
-        };
+        }
     }
     console.log( "---------------------------ENDE self.port.on InfoTerminalStartseite -----------------------" );
 
