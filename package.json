@@ -4,8 +4,8 @@
   "id": "jumphomema@bib.uni-mannheim.de",
   "description": "Fügt einen Home-Butten auf jeder Seite ein (ausser innerhalb von iFrames). Button wird links unten halbtransparent eingefügt",
   "author": "Bernd Fallert, UB Mannheim",
-  "license": "MPL 2.0",
-  "version": "0.6",
+  "license": "GNU GPL v3.0",
+  "version": "0.7",
   "preferences": [{
         "name": "InfoTerminalStartseiteAufrufenWebadresse",
         "title": "URL",

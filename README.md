@@ -24,12 +24,14 @@ JumpHomeMa ist ein Add-on für Firefox.
 
 This is free software. You may use it under the terms of the GNU General Public License (GPL). See [LICENSE](LICENSE) for details.
 
-## LIZENZ  ![de](http://bib.uni-mannheim.de/fileadmin/scripts/flag_de.jpeg)
+## Lizenz  ![de](http://bib.uni-mannheim.de/fileadmin/scripts/flag_de.jpeg)
 
 Dies ist freie Software. Sie können sie unter den Bedingungen der GNU General Public License (GPL) verwenden. Siehe [LICENSE](LICENSE) für Details.
 
 ## Historie
 
+- 0.7 05.03.2015, 15:52:47  Lizenz des Plugins und Lizenz des Quellcodes vereinheitlicht, jetzt in beiden Fällen GNU GPL v3.0
+                            Bereinigung beim Icon innerhalb des Home-Button, jetzt png verwendet statt gif
 - 0.6 02.03.2015, 15:29:52  Anpassung wg UB Heidelberg, Mobile Seiten, Problem mit Ajax gefixed, Dank an Daniela Wolf
 - 0.5 26.02.2015, 11:07:27  jetzt mit Konfigurationsmöglichkeit. Welche URL soll angezeigt werden, ggf. neu starten nach ändern der URL
 - 0.4 21.01.2015, 12:00:00  interne Version
