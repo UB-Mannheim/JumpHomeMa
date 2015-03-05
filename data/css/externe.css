@@ -15,7 +15,10 @@ html, body, form
     padding: 0px;
 }
 
-/* Version links */
+/*---------------------------------------------*/
+/* Version links                               */
+/* background-image wird in main.js festgelegt */
+/*---------------------------------------------*/
 .schliessbutton_neu_links {
     background-color: #990000;
     border: 1px solid #2E2E2E;
@@ -36,7 +39,6 @@ html, body, form
     bottom: 10px;
     height: 5%;
     opacity: 0.69;
-    background-image: url('home/home_weiss.gif');
     z-index: 100001;
 }
 
@@ -53,7 +55,7 @@ body .UBMaSchliess {
     line-height: 18px;
 }
 
-.UBMaSchliess, 
+.UBMaSchliess,
 .UBMaSchliess #info-terminal-home-button {
     box-sizing: unset !important;
 }
