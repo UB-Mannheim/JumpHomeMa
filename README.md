@@ -1,17 +1,17 @@
-# JumpHomeMa
+# JumpHomeMa - Firefox Add-on
 
 ## Überblick
 
-JumpHomeMa ist ein Addon für Firefox.
+JumpHomeMa ist ein Add-on für Firefox.
 
-- Das AddOn blendet links unten (mit einem kleinen Abstand zum unteren Rand) einen halbtransparenten Home-Button ein.
-- Die URL auf die der Home-Button verweist kann mit den normalen Konfigurationsseite des AddOns eingestellt werden.
+- Das Add-on blendet links unten (mit einem kleinen Abstand zum unteren Rand) einen halbtransparenten Home-Button ein.
+- Die URL auf die der Home-Button verweist kann mit den normalen Konfigurationsseite des Add-ons eingestellt werden.
 - Der Home-Button wird nicht eingeblendet, wenn die HTML-Datei innerhalb eines iFrames dargestellt wird.
 - Bei lokalen Dateien, die nur über file:// aufgerufen werden, wird der Home-Button nicht angezeigt.
 
 ## Konfiguration
 
-- In Extras / Addon / JumpHomeMa / Einstellungen gibt es ein Eingabefeld "URL". In diesem Feld kann die URL hinterlegt werden, auf die der Home-Button verlinkt werden soll.
+- In Extras / Add-ons / JumpHomeMa / Einstellungen gibt es ein Eingabefeld "URL". In diesem Feld kann die URL hinterlegt werden, auf die der Home-Button verlinkt werden soll.
 - Gggf. muss nach dem Ändern der URL der Browser neu gestartet werden, damit die neue Adresse akzeptiert wird.
 
 ## Notwendige Einstellung in Firefox
