@@ -1,0 +1,7 @@
+# ignore any zip or xpi files
+*.zip
+*.xpi
+icon-64.png
+*.xcf
+entwicklung.txt
+.jpmignore

@@ -30,11 +30,12 @@ Dies ist freie Software. Sie können sie unter den Bedingungen der GNU General P
 
 ## Historie
 
-- 0.7 05.03.2015, 15:52:47  Lizenz des Plugins und Lizenz des Quellcodes vereinheitlicht, jetzt in beiden Fällen GNU GPL v3.0
+- 0.8.1 02.05.2016, 15:32:28  Interne Anpassung wg. Revision, addEventListener statt href
+- 0.7   05.03.2015, 15:52:47  Lizenz des Plugins und Lizenz des Quellcodes vereinheitlicht, jetzt in beiden Fällen GNU GPL v3.0
                             Bereinigung beim Icon innerhalb des Home-Button, jetzt png verwendet statt gif
-- 0.6 02.03.2015, 15:29:52  Anpassung wg UB Heidelberg, Mobile Seiten, Problem mit Ajax gefixed, Dank an Daniela Wolf
-- 0.5 26.02.2015, 11:07:27  jetzt mit Konfigurationsmöglichkeit. Welche URL soll angezeigt werden, ggf. neu starten nach ändern der URL
-- 0.4 21.01.2015, 12:00:00  interne Version
-- 0.3 20.01.2015, 12:30:00  nur noch wenn nicht innerhalb eines iframes aufgerufen, sonst z.B. Problem mit Ampelseite
-- 0.2 16.01.2015, 13:40:00  Einsatzfähig, jetzt hat Button einen Z-Index von 10000 damit sollte es immer on Top sein
-- 0.1 15.01.2015, 12:49:14  Abgeleitetetes Projekt begonnen
+- 0.6   02.03.2015, 15:29:52  Anpassung wg UB Heidelberg, Mobile Seiten, Problem mit Ajax gefixed, Dank an Daniela Wolf
+- 0.5   26.02.2015, 11:07:27  jetzt mit Konfigurationsmöglichkeit. Welche URL soll angezeigt werden, ggf. neu starten nach ändern der URL
+- 0.4   21.01.2015, 12:00:00  interne Version
+- 0.3   20.01.2015, 12:30:00  nur noch wenn nicht innerhalb eines iframes aufgerufen, sonst z.B. Problem mit Ampelseite
+- 0.2   16.01.2015, 13:40:00  Einsatzfähig, jetzt hat Button einen Z-Index von 10000 damit sollte es immer on Top sein
+- 0.1   15.01.2015, 12:49:14  Abgeleitetetes Projekt begonnen

@@ -5,9 +5,9 @@
   "description": "Fügt einen Home-Butten auf jeder Seite ein (ausser innerhalb von iFrames). Button wird links unten halbtransparent eingefügt",
   "author": "Bernd Fallert, UB Mannheim",
   "license": "GNU GPL v3.0",
-  "version": "0.7",
+  "version": "0.8.1",
+  "main": "lib/main.js",
   "icon": "icon-48.png",
-  "icon64": "icon-64.png",
   "preferences": [{
         "name": "InfoTerminalStartseiteAufrufenWebadresse",
         "title": "URL",

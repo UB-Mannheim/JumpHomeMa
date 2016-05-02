@@ -1,4 +1,6 @@
-var main = require("./main");
+// Anpassung wg jqm
+var main = require("../lib/main");
+require("sdk/test").run(exports);
 
 exports["test main"] = function(assert) {
   assert.pass("Unit test running!");

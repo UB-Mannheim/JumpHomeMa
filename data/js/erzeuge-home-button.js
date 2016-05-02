@@ -1,5 +1,5 @@
 //   Name: erzeuge-home-button.js
-//  Stand: 26.02.2015, 10:29:10 
+//  Stand: 2016-05-02, 15:20:02
 // Author: Bernd Fallert, UB Mannheim
 // version: Allgemein, jetzt mit Einstellmöglichkeit
 
@@ -25,8 +25,10 @@ self.port.on("InfoTerminalStartseite", function(AktInfoTerminalStartseiteAufrufe
     console.log( "\n\n\n\n" + "lZeigeButton: ______________________" + "\n\n\n\n");
     if (lZeigeButton) {
         var div = document.createElement("div");
-        div.innerHTML = "<a id='info-terminal-home-button' data-ajax='false' href='" + AktInfoTerminalStartseiteAufrufenWebadresse + "' " +
-                        "class='schliessbutton_neu_links' title='Home'>" +
+        div.innerHTML = "<a id='info-terminal-home-button' " +
+                        "data-ajax='false' " +
+                        "class='schliessbutton_neu_links' " +
+                        "title='Home'>" +
                         "</a>";
         div.style.color = "white";
         div.setAttribute("class", "UBMaSchliess");
@@ -39,6 +41,11 @@ self.port.on("InfoTerminalStartseite", function(AktInfoTerminalStartseiteAufrufe
 
         if (!isInIframe) {
             document.body.insertBefore(div, document.body.firstChild);
+
+            var el = document.getElementById("info-terminal-home-button");
+            el.addEventListener("click", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
+            el.addEventListener("touchstart", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
+            el.addEventListener("touched", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
         }
     }
     console.log( "---------------------------ENDE self.port.on InfoTerminalStartseite -----------------------" );
