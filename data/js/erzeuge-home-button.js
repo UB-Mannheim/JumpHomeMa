@@ -1,28 +1,20 @@
 //   Name: erzeuge-home-button.js
-//  Stand: 2016-05-02, 15:20:02
+//  Stand: 2016-05-03, 08:01:18
 // Author: Bernd Fallert, UB Mannheim
 // version: Allgemein, jetzt mit Einstellmöglichkeit
 
+var debug = false;
+//var debug       = true;
+var debug_level = 3;
+
 self.port.on("InfoTerminalStartseite", function(AktInfoTerminalStartseiteAufrufenWebadresse) {
 
-    console.log( "---------------------------START self.port.on InfoTerminalStartseite -----------------------" );
-    console.log(AktInfoTerminalStartseiteAufrufenWebadresse);
-
-    //var d                       = document;
-    //var host                    = d.location.host;
-    //------------------------------------------------------------------------------
-    // Fuer Pruefung auf RufeExterneURL.php und UB3D
-    //------------------------------------------------------------------------------
-    //var ScriptName              = d.location.pathname;
+    apiLog('---------------------------START self.port.on InfoTerminalStartseite -----------------------', 'n', 0);
+    apiLog(AktInfoTerminalStartseiteAufrufenWebadresse, 'n', 0);
 
     var lZeigeButton            = true;
 
-    //var lFehlersuche            = false;
-    //var lFehlersuche            = true;
-
-
-
-    console.log( "\n\n\n\n" + "lZeigeButton: ______________________" + "\n\n\n\n");
+    apiLog("\n\n\n\n" + "lZeigeButton: ______________________" + "\n\n\n\n", 'n', 0);
     if (lZeigeButton) {
         var div = document.createElement("div");
         div.innerHTML = "<a id='info-terminal-home-button' " +
@@ -33,11 +25,10 @@ self.port.on("InfoTerminalStartseite", function(AktInfoTerminalStartseiteAufrufe
         div.style.color = "white";
         div.setAttribute("class", "UBMaSchliess");
 
-        console.log( "\n" + '------in iframe?-------------------------------------------' + "\n" );
-        var some = "test ob in iframe: ";
+        apiLog("\n" + '------in iframe?-------------------------------------------' + "\n", 'n', 0);
 
         var isInIframe = (window.location != window.parent.location) ? true : false;
-        console.log( some + isInIframe);
+        apiLog('test ob in iframe: ' + isInIframe, 0);
 
         if (!isInIframe) {
             document.body.insertBefore(div, document.body.firstChild);
@@ -48,14 +39,13 @@ self.port.on("InfoTerminalStartseite", function(AktInfoTerminalStartseiteAufrufe
             el.addEventListener("touched", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
         }
     }
-    console.log( "---------------------------ENDE self.port.on InfoTerminalStartseite -----------------------" );
-
+    apiLog("---------------------------ENDE self.port.on InfoTerminalStartseite -----------------------", 0);
 });
 
 
 self.port.on("prefChange", function(prefName,value) {
-    console.log('----------------> ' + prefName);
-    console.log('----------------> ' + value);
+    apiLog( '---------->  prefChange: ' + prefName, 'n', 0 );
+    apiLog( '----------> ' + value, 'n', 0 );
     //------------------------------------------------
     // wert aus Einstellungsdialog übernehmen
     // Leider ggf. ein Neustart notwendig
@@ -64,4 +54,57 @@ self.port.on("prefChange", function(prefName,value) {
         document.getElementById('info-terminal-home-button').href = value;
     }
 });
+
+//==============================================================================
+//      Name: apiLog
+//   Aufgabe: Debugging-Meldungen in der Firebug-Konsole oder auf einem
+//              anderen Weg ausgeben
+// Parameter: pText
+//                  => der auszugebende Text
+//            pType
+//                  => Typ der Ausgabe
+//                      n  / normal
+//                      i / info
+//                      g / group / gruppiere
+//                      ge / groupEnd / gruppiereEnde
+//                      e / /error / f / fehler
+//            pDebugLevel
+//                  =>  0 am wenigsten Meldungen
+//                      1
+//                      2
+//==============================================================================
+function apiLog( pText, pType, pDebugLevel ) {
+    // Ausnahmsweise nicht ausgeben, sonst wird alles etwas unuebersichtlich!
+    //        apiLog( " ---------------------------------------------------------------------", 'info', 0);
+    //        apiLog( " this.apiLog", 'info', 0);
+    //        apiLog( " ---------------------------------------------------------------------", 'info', 0);
+
+    if (debug) {
+        if ( pDebugLevel <= debug_level ) {
+            if (pType == '' || pType == 'n' || pType == 'normal') {
+                console.log( pText );
+            } else if (pType == 'info' || pType == 'i' ) {
+                console.info( pText );
+            } else if (pType == 'group' || pType == 'g' || pType == 'gruppiere'  ) {
+                if ($.browser.msie) {
+                    console.log( "=========GROUP===============================================================" );
+                    console.log( pText );
+                    console.log( "=========GROUP===============================================================" );
+                } else {
+                    console.group( pText );
+                }
+
+            } else if (pType == 'groupEnd' || pType == 'ge' || pType == 'gruppiereEnde'  ) {
+                //console.groupEnd();
+                if ($.browser.msie) {
+                    console.log( "=========GROUP END============================================================" );
+                } else {
+                    console.groupEnd();
+                }
+            } else if (pType == 'error' || pType == 'e' || pType == 'f'  || pType == 'fehler'  ) {
+                console.error( pText );
+            }
+        }
+    }
+}
 // Eof: erzeuge-home-button.js

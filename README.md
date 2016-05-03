@@ -30,6 +30,7 @@ Dies ist freie Software. Sie können sie unter den Bedingungen der GNU General P
 
 ## Historie
 
+- 0.8.2 03.05.2016, 08:07:00  ersatz für console.log um in produktiver Version Meldungen ausschalten zu können
 - 0.8.1 02.05.2016, 15:32:28  Interne Anpassung wg. Revision, addEventListener statt href
 - 0.7   05.03.2015, 15:52:47  Lizenz des Plugins und Lizenz des Quellcodes vereinheitlicht, jetzt in beiden Fällen GNU GPL v3.0
                             Bereinigung beim Icon innerhalb des Home-Button, jetzt png verwendet statt gif
