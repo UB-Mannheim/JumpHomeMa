@@ -5,3 +5,4 @@ icon-64.png
 *.xcf
 entwicklung.txt
 .jpmignore
+.git/
