@@ -20,11 +20,11 @@ JumpHomeMa ist ein Add-on für Firefox.
   Alternativ kann "nach benutzerdefinierten Einstellungen anlegen" ausgewählt und ein Haken bei
   "Die Chronik löschen, wenn Firefox geschlossen wird" gesetzt werden.
 
-## Licence  ![en](http://bib.uni-mannheim.de/fileadmin/scripts/flag_en.jpeg)
+## Licence  ![en](http://bib.uni-mannheim.de/fileadmin/images/github/flag_en.jpeg)
 
 This is free software. You may use it under the terms of the GNU General Public License (GPL). See [LICENSE](LICENSE) for details.
 
-## Lizenz  ![de](http://bib.uni-mannheim.de/fileadmin/scripts/flag_de.jpeg)
+## Lizenz  ![de](http://bib.uni-mannheim.de/fileadmin/images/github/flag_de.jpeg)
 
 Dies ist freie Software. Sie können sie unter den Bedingungen der GNU General Public License (GPL) verwenden. Siehe [LICENSE](LICENSE) für Details.
 
