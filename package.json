@@ -8,11 +8,16 @@
   "version": "0.8.2",
   "main": "lib/main.js",
   "icon": "icon-48.png",
-  "preferences": [{
-        "name": "InfoTerminalStartseiteAufrufenWebadresse",
-        "title": "URL",
-        "description": "Auf welche URL soll der Homebutton zeigen",
-        "type": "string",
-        "value": "http://www.bib.uni-mannheim.de/1041.html "
-    }]
+  "preferences": [
+    {
+      "name": "InfoTerminalStartseiteAufrufenWebadresse",
+      "title": "URL",
+      "description": "Auf welche URL soll der Homebutton zeigen",
+      "type": "string",
+      "value": "http://www.bib.uni-mannheim.de/1041.html "
+    }
+  ],
+  "devDependencies": {
+    "web-ext": "^4.2.0"
+  }
 }
