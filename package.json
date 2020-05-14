@@ -4,9 +4,9 @@
   "id": "jumphomema@bib.uni-mannheim.de",
   "description": "Fügt einen Home-Butten auf jeder Seite ein (ausser innerhalb von iFrames). Button wird links unten halbtransparent eingefügt",
   "author": "Bernd Fallert, UB Mannheim",
-  "license": "GNU GPL v3.0",
-  "version": "0.8.2",
-  "main": "lib/main.js",
+  "license": "GPL-3.0-only",
+  "version": "0.9.0",
+  "main": "jump-home-button.js",
   "icon": "icon-48.png",
   "preferences": [
     {
@@ -19,5 +19,12 @@
   ],
   "devDependencies": {
     "web-ext": "^4.2.0"
+  },
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir ./extension-dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:UB-Mannheim/JumpHomeMa.git"
   }
 }
