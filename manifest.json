@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "jumphomema",
+    "version": "2.0",
+
+    "description": "Inserts a home button on every page (except within iFrames). The button is inserted semi-transparently at the bottom left",
+
+    "applications": {
+      "gecko": {
+        "id": "jumphomema@bib.uni-mannheim.de"
+      }
+    }
+
+    "icons": {
+        "48": "icons/icon-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*"],
+            "js": ["jump-home-button.js"]
+        }
+    ]
+
+}
