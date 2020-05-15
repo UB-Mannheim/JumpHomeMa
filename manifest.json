@@ -10,7 +10,7 @@
       "gecko": {
         "id": "jumphomema@bib.uni-mannheim.de"
       }
-    }
+    },
 
     "icons": {
         "48": "icons/icon-48.png",
@@ -23,5 +23,4 @@
             "js": ["jump-home-button.js"]
         }
     ]
-
 }
