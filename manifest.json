@@ -44,8 +44,7 @@
     },
 
     "web_accessible_resources": [
-        "quelldaten/*.png",
-        "quelldaten/*.svg"
+        "images/*.svg"
     ],
 
     "options_ui": {
