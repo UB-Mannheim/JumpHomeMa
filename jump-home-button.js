@@ -20,7 +20,7 @@ if (lZeigeButton) {
         // at the moment a fix URL to test the function until the option page works
         AktInfoTerminalStartseiteAufrufenWebadresse = "http:\\www.bib.uni-mannheim.de";
         //el.addEventListener("click", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
-        el.addEventListener("click", function(){window.location.href = xTest}, false );
+        el.addEventListener("click", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
         el.addEventListener("touchstart", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
         el.addEventListener("touched", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
     }
