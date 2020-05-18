@@ -1,1 +1,1 @@
-web-ext build -o --ignore-files Protokolle quelldaten/*.svg *.log package-lock.json TODO.md *.cmd
+web-ext build -o --ignore-files quelldaten Protokolle *.log package-lock.json TODO.md *.cmd __stillgelegt_package.json icons/*.old.svg icons/icon-komprimiert.svg lib data
