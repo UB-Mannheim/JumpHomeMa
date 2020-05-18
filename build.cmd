@@ -1,1 +1,0 @@
-web-ext build -o --ignore-files Protokolle quelldaten/*.svg *.log package-lock.json TODO.md
