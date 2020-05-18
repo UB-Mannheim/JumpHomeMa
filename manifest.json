@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "jumphomema",
-    "version": "2.0.0",
+    "version": "1.0.0",
 
     "description": "Inserts a home button on every page (except within iFrames). The button is inserted semi-transparently at the bottom left",
 
