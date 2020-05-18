@@ -19,22 +19,38 @@
 
     "content_scripts": [
         {
-            "matches": ["*://*.bib.uni-mannheim.de/*"],
+            "css": ["content-style.css"],
+            "matches": ["<all_urls>"],
             "js": ["jump-home-button.js"]
         }
     ],
 
     "background": {
-        "scripts": ["background.js"]
+        "scripts": [
+            "background.js",
+            "options/options.js"
+        ]
     },
 
     "permissions": [
-        "*://*.bib.uni-mannheim.de/*",
+        "<all_urls>",
         "activeTab",
-        "tabs"
+        "tabs",
+        "storage"
     ],
 
     "page_action": {
         "browser_style": true
+    },
+
+    "web_accessible_resources": [
+        "quelldaten/*.png",
+        "quelldaten/*.svg"
+    ],
+
+    "options_ui": {
+        "page": "options/options.html",
+        "browser_style": true
     }
+
 }
