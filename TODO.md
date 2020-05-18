@@ -1,7 +1,5 @@
 # ToDo
 
-- Korrigieren: bei lokalen Dateien die nur über file:// aufgerufen werden, wird der Home-Button nicht angezeigt
-  Ursache: ?
+- option page didn't work
 
-- Eigentum auf UB-Mannheim übertragen
 
