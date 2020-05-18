@@ -19,8 +19,22 @@
 
     "content_scripts": [
         {
-            "matches": ["*://*"],
+            "matches": ["*://*.bib.uni-mannheim.de/*"],
             "js": ["jump-home-button.js"]
         }
-    ]
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": [
+        "*://*.bib.uni-mannheim.de/*",
+        "activeTab",
+        "tabs"
+    ],
+
+    "page_action": {
+        "browser_style": true
+    }
 }
