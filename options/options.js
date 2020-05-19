@@ -1,20 +1,23 @@
 function saveOptions(e) {
-  browser.storage.sync.set({
-    url: document.querySelector("#url").value
-  });
-  e.preventDefault();
+    e.preventDefault();
+    browser.storage.sync.set({
+        url: document.querySelector("#url").value
+    });
 }
 
 function restoreOptions() {
-  var storageItem = browser.storage.managed.get('url');
-  storageItem.then((res) => {
-    document.querySelector("#managed-url").innerText = res.url;
-  });
 
-  var gettingItem = browser.storage.sync.get('url');
-  gettingItem.then((res) => {
-    document.querySelector("#url").value = res.url || 'http:\\www.bib.uni-mannheim.de';
-  });
+    function setCurrentChoice(result) {
+        document.querySelector("#url").value = result.url || "https://www.bib.uni-mannheim.de/";
+        document.getElementById("managed-url").innerText = result.url
+    }
+
+    function onError(error) {
+        console.log(`Error: ${error}`);
+    }
+
+    let getting = browser.storage.sync.get("url");
+    getting.then(setCurrentChoice, onError);
 }
 
 document.addEventListener('DOMContentLoaded', restoreOptions);

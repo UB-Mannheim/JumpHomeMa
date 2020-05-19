@@ -5,13 +5,13 @@
 JumpHomeMa ist ein Add-on für Firefox.
 
 - Das Add-on blendet links unten (mit einem kleinen Abstand zum unteren Rand) einen halbtransparenten Home-Button ein.
-- Die URL auf die der Home-Button verweist kann mit den normalen Konfigurationsseite des Add-ons eingestellt werden. (aktuell nicht funktionsfähig)
+- Die URL auf die der Home-Button verweist kann mit den normalen Konfigurationsseite des Add-ons eingestellt werden.
 - Der Home-Button wird nicht eingeblendet, wenn die HTML-Datei innerhalb eines iFrames dargestellt wird. (aktuell ist das nicht der Fall)
 
-## Konfiguration (aktuell nicht funktionsfähig)
+## Konfiguration
 
 - In Extras / Add-ons / JumpHomeMa / Einstellungen gibt es ein Eingabefeld "URL". In diesem Feld kann die URL hinterlegt werden, auf die der Home-Button verlinkt werden soll.
-- Gggf. muss nach dem ändern der URL der Browser neu gestartet werden, damit die neue Adresse akzeptiert wird.
+- Gggf. muss nach dem ändern der URL der Browser neu gestartet werden, damit die neue Adresse akzeptiert wird, oder den Tab aktualisieren
 
 ## Notwendige Einstellung in Firefox
 
@@ -29,6 +29,8 @@ Dies ist freie Software. Sie können sie unter den Bedingungen der GNU General P
 
 ## Historie
 
+- 1.0.2 19.05.2020, 12:16:00  Problem with options page is fixed
+- 1.0.1 18.05.2020, 14:32:00  first version with webextensions, but without working options page
 - 1.0.0 18.05.2020, 14:31:00  first version with webextensions
 - 0.8.2 03.05.2016, 08:07:00  Ersatz für console.log um in produktiver Version Meldungen ausschalten zu können
 - 0.8.1 02.05.2016, 15:32:28  Interne Anpassung wg. Revision, addEventListener statt href

@@ -1,3 +1,4 @@
+// Name: jump-home-button.js
 var lZeigeButton            = true;
 
 if (lZeigeButton) {
@@ -16,13 +17,28 @@ if (lZeigeButton) {
     if (!isInIframe) {
         document.body.insertBefore(div, document.body.firstChild);
 
-        var el = document.getElementById("info-terminal-home-button");
-        // at the moment a fix URL to test the function until the option page works
-        AktInfoTerminalStartseiteAufrufenWebadresse = "http:\\www.bib.uni-mannheim.de";
-        //el.addEventListener("click", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
-        el.addEventListener("click", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
-        el.addEventListener("touchstart", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
-        el.addEventListener("touched", function(){window.location.href = AktInfoTerminalStartseiteAufrufenWebadresse}, false );
+        let getting = browser.storage.sync.get("url");
+        getting.then(onGot, onError);
     }
     document.body.appendChild(div);
+}
+
+
+
+function onError(error) {
+  console.log(`Error: ${error}`);
+}
+
+function onGot(item) {
+    let URL = "";
+    if (item.url) {
+        URL = item.url;
+    } else {
+        URL = "https://www.bib.uni-mannheim.de/";
+    };
+
+    let el = document.getElementById("info-terminal-home-button");
+    el.addEventListener("click", function(){window.location.href = URL}, false );
+    el.addEventListener("touchstart", function(){window.location.href = URL}, false );
+    el.addEventListener("touched", function(){window.location.href = URL}, false );
 }
